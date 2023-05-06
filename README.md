@@ -1,2 +1,5 @@
 # poleBalanceGraphing
 graphs pole movement and activation values of neural networks.
+
+# Instructions on how to use:
+After training the model and running it in the original pole balance code. Go to the newly created folder for your simulation and find the txt file that ends with "xy_track" and copy it over to "DatatoGraph" folder. Then find the txt file that ends with "_act" and copy it over to the "ActivationValues" folder. Make sure to rename the file to something that is easy to remember. Open up the python script depending on whether you want to graph the pole movement or the network's activation values and either create a new variable or modify one of the existing variables with the name of the new txt file you just made, in the format "Variable name = currentWorking directory + '/DataToGraph/(newfile).txt' or '/ActivationValues/(newfile).txt'. Then modify the name of the read call in the line "with open('variable name') as f:". Upon running, the data should be plotted on a graph. 
